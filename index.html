@@ -49,7 +49,7 @@
       <div class="content text-center text-white">
         <div class="content-img position-absolute">
           <img
-            src="/images/Gallery/d234ae4aa07ef8169cb86d23da05372526574b47.jpeg"
+            src="images/Gallery/d234ae4aa07ef8169cb86d23da05372526574b47.jpeg"
             alt=""
           />
         </div>
@@ -81,7 +81,7 @@
         >
           <div class="col-10 col-sm-8 col-md-3 box h-100">
             <div class="frame position-relative overflow-hidden">
-              <img src="/images/frame.png" alt="" class="w-100" />
+              <img src="images/frame.png" alt="" class="w-100" />
               <div class="image position-absolute bottom-0 z-n1">
                 <img src="images/Gallery/uxguehwcyv.png" alt="" class="w-100" />
               </div>
@@ -97,7 +97,7 @@
           </div>
           <div class="col-8 col-sm-8 col-md-3 box h-100">
             <div class="frame position-relative overflow-hidden">
-              <img src="/images/frame.png" alt="" class="w-100" />
+              <img src="images/frame.png" alt="" class="w-100" />
               <div class="image position-absolute bottom-0 z-n1">
                 <img src="images/Gallery/fw9ezynqkk.png" alt="" class="w-100" />
               </div>
@@ -311,6 +311,44 @@
       </div>
     </section>
 
+     <section id="Reservasi">
+            <div class="container p-5 ">
+        <h3 class="p-5 text-center text-white">Reservasi</h3>
+        <div class="row g-3">
+            <h2 class="text-center text-white">Konfirmasi Kehadiran</h2>
+             <p class="text-center mb-5 text-white">Isi form dibawah ini untukmelakukan konfirmasi keharidan</p>
+               <form id="my-form" class="row g-3"  method="POST" action="https://script.google.com/macros/s/AKfycbxyJHFGq1lPCHkX6KPQ72_LEpuNKQ5zXacLluVtmikI6ICcXsCUJw952Do_tmBPSO_C/exec">
+            <div class="col-12 col-md-4">
+              <label for="nama" class="text-white">Nama :</label>
+              <input type="text" class="form-control" name="nama" placeholder="First name" aria-label="First name">
+            </div>
+          
+            <div class="col-12 col-md-4">
+                      <label for="jumlah" class="text-nowrap text-white">Jumlah anggota : </label>
+              <input type="text" class="form-control" name="jumlah" placeholder="Last name" aria-label="Last name">
+            </div>
+         <div class="col-12 col-md-4">
+                  <label for="status" class="text-nowrap text-white">konfirmasi :</label>
+              <select name="status" id="hadir" class="w-100 p-2 rounded"> 
+                <option >Pilih salah satu</option>
+                <option value="Tidak Hadir">Tidak hadir</option>
+                <option value="Hadir">Hadir</option>
+              </select>
+        </div>
+        <div class="col-5 mt-3">
+          <button type="submit" class="btn btn-light text-danger">Kirim</button>
+        </div>
+        
+        </div>        
+        
+       </form>
+
+       <div class="col-5 my-5">
+          <script defer src="https://cdn.commento.io/js/commento.js"></script>
+          <div id="commento"></div>
+       </div>
+    </section>
+
     <section class="media-player position-fixed bottom-0 mx-3 mb-3 d-none">
       <div class="contain">
         <img src="images/cd/cd.png" alt="" width="50px" />
@@ -321,10 +359,9 @@
       </div>
     </section>
 
-    <section class="container">
-      <script defer src="https://cdn.commento.io/js/commento.js"></script>
-      <div id="commento"></div>
-    </section>
+    <!-- <section class="container">
+   
+    </section> -->
 
     <script src="script.js"></script>
     <script>

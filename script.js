@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const date = document.getElementById("date");
 const open = document.getElementById("open");
-
+const rootElement = document.querySelector(":root");
 open.addEventListener("click", function () {
   opened();
 });
@@ -17,14 +17,15 @@ function opened() {
   setTimeout(() => {
     open.classList.add("d-none");
   }, 500);
-
-  localStorage.setItem("opened", "true");
 }
 
-window.onload = () => {
-  scrollTo(0, 0);
-  body.className = "max-vh-100 overflow-hidden";
-};
+// window.onload = () => {
+//   scrollTo(0, 0);
+
+//   setTimeout(() => {
+//     body.className = "max-vh-100 overflow-hidden";
+//   }, 100);
+// };
 
 const audioplayer = document.getElementById("audio-player");
 const mediaplayer = document.querySelector(".media-player");
@@ -60,3 +61,17 @@ if (getnama !== null) {
 } else {
   nama.innerHTML = "Keluarga Besar Yang Bersangkutan";
 }
+window.addEventListener("load", function () {
+  const form = document.getElementById("my-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: "POST",
+      body: data,
+    }).then(() => {
+      alert("Success!");
+    });
+  });
+});

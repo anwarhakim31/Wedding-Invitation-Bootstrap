@@ -4,6 +4,14 @@ body {
   background-color: whitesmoke;
   min-height: 4500px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+}
 #hero {
   height: 110vh;
   width: 100%;
@@ -174,6 +182,33 @@ body {
   transform: scale(1.1);
 }
 
+#Reservasi {
+  background-color: #8f5d2c;
+}
+
+.commento-root .commento-submit-button {
+  float: right;
+  background: #8f5d2c;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.commento-root .commento-footer {
+  margin: 36px 0 12px;
+  padding-right: 12px;
+  display: none;
+}
+.commento-root .commento-markdown-button {
+  display: none;
+}
+#commento-comments-area {
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.send {
+  background: #8f5d2c;
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
