@@ -21,7 +21,7 @@
     <script src="countdown/simplyCountdown.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="">
     <section id="hero">
       <main
         class="d-flex justify-content-center align-items-center flex-column w-100 h-100 text-white text-center"
@@ -35,6 +35,7 @@
           <span>Keluarga Besar Soekismo</span>
 
           <button
+            id="open"
             class="btn btn-light border-0 fw-bold d-block m-auto mt-4 d-flex align-items-center"
           >
             <i class="ph ph-envelope-simple-open pe-2 fs-4"></i> Open Invitation
@@ -292,7 +293,11 @@
             </a>
           </div>
           <div class="col">
-            <a href="images/Gallery/fw9ezynqkk.png" data-toggle="lightbox">
+            <a
+              href="images/Gallery/fw9ezynqkk.png"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+            >
               <img
                 src="images/Gallery/fw9ezynqkk.png"
                 alt=""
@@ -305,6 +310,17 @@
         </div>
       </div>
     </section>
+
+    <section class="media-player position-fixed bottom-0 mx-3 mb-3 d-none">
+      <div class="contain">
+        <img src="images/cd/cd.png" alt="" width="50px" />
+        <audio
+          src="audio/Penantian Berharga - Rizky Febian (Lirik).mp3"
+          id="audio-player"
+        ></audio>
+      </div>
+    </section>
+
     <script src="script.js"></script>
     <script>
       simplyCountdown(".simply-countdown", {
