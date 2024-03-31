@@ -184,9 +184,24 @@ h3 {
 }
 
 .commento-root .commento-submit-button {
-  background: white;
   background-color: white;
 }
+
+.commento-root .commento-login .commento-login-text {
+  color: white;
+}
+
+.commento-root a {
+  color: white;
+}
+
+.commento-root
+  .commento-sort-policy-buttons-container
+  .commento-sort-policy-buttons
+  .commento-sort-policy-button {
+  color: #ffffff;
+}
+
 .commento-root .commento-footer {
   display: none;
 }
