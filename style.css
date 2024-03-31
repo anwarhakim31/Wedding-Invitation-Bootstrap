@@ -165,13 +165,6 @@ h3 {
     object-position: left;
   }
 }
-
-@media (min-width: 990px) {
-  #acara {
-    height: 80vh;
-  }
-}
-
 .media-player {
   cursor: pointer;
 
@@ -186,16 +179,15 @@ h3 {
   background-color: #8f5d2c;
 }
 
+.bg-brown {
+  background-color: #8f5d2c;
+}
+
 .commento-root .commento-submit-button {
-  float: right;
-  background: #8f5d2c;
-  text-transform: uppercase;
-  font-size: 12px;
-  margin-top: 10px;
+  background: white;
+  background-color: white;
 }
 .commento-root .commento-footer {
-  margin: 36px 0 12px;
-  padding-right: 12px;
   display: none;
 }
 .commento-root .commento-markdown-button {
@@ -215,5 +207,11 @@ h3 {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 990px) {
+  #acara {
+    height: 80vh;
   }
 }
