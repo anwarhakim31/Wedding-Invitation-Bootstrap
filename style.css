@@ -199,7 +199,9 @@ h3 {
   .commento-sort-policy-buttons-container
   .commento-sort-policy-buttons
   .commento-sort-policy-button {
-  color: #ffffff;
+  color: #fffff;
+  font-size: 13px;
+  padding: 0 7px;
 }
 
 .commento-root .commento-footer {
