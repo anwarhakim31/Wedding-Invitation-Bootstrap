@@ -3,6 +3,10 @@ const date = document.getElementById("date");
 const open = document.getElementById("open");
 
 open.addEventListener("click", function () {
+  opened();
+});
+
+function opened() {
   body.className = "";
   if (date) {
     date.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -13,12 +17,14 @@ open.addEventListener("click", function () {
   setTimeout(() => {
     open.classList.add("d-none");
   }, 500);
-});
 
-// window.onload = () => {
-//   scrollTo(0, 0);
-//   body.className = "max-vh-100 overflow-hidden";
-// };
+  localStorage.setItem("opened", "true");
+}
+
+window.onload = () => {
+  scrollTo(0, 0);
+  body.className = "max-vh-100 overflow-hidden";
+};
 
 const audioplayer = document.getElementById("audio-player");
 const mediaplayer = document.querySelector(".media-player");
@@ -43,3 +49,14 @@ mediaplayer.addEventListener("click", function () {
 audioplayer.addEventListener("ended", function () {
   playmusic();
 });
+
+const urlname = new URLSearchParams(window.location.search);
+const getnama = urlname.get("nama");
+
+const nama = document.querySelector(".nama");
+
+if (getnama !== null) {
+  nama.innerHTML = getnama;
+} else {
+  nama.innerHTML = "Keluarga Besar Yang Bersangkutan";
+}
