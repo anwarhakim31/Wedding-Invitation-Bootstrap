@@ -19,13 +19,13 @@ function opened() {
   }, 500);
 }
 
-// window.onload = () => {
-//   scrollTo(0, 0);
+window.onload = () => {
+  scrollTo(0, 0);
 
-//   setTimeout(() => {
-//     body.className = "max-vh-100 overflow-hidden";
-//   }, 100);
-// };
+  setTimeout(() => {
+    body.className = "max-vh-100 overflow-hidden";
+  }, 100);
+};
 
 const audioplayer = document.getElementById("audio-player");
 const mediaplayer = document.querySelector(".media-player");
