@@ -2,7 +2,6 @@ body {
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
   background-color: whitesmoke;
-  min-height: 4500px;
 }
 
 html {
@@ -175,12 +174,12 @@ h3 {
   transform: scale(1.1);
 }
 
-#Reservasi {
+.bg-brown {
   background-color: #8f5d2c;
 }
 
-.bg-brown {
-  background-color: #8f5d2c;
+.text-grey {
+  color: #707880;
 }
 
 .commento-root .commento-submit-button {
