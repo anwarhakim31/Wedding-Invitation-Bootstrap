@@ -12,12 +12,12 @@ Webiste ini merupakan undangan online yang menampilakan acara pernikahan yang ak
 
 ## Fitur Website 🌟
 
-1. Animate on scroll
+1. Reservasi untuk konfimasi ke hadiran/tidak hadiran
 3. Backsound + button play/pause
 4. Generate link untuk share ke tamu undangan (berdasarkan nama)
 5. open invitation button
 6. Countdown Hari Acara pernikahan
 7. Galeri + lightbox
 8. Interactive Comment Section
-9. Reservasi untuk konfimasi ke hadiran/tidak hadiran
+
 
